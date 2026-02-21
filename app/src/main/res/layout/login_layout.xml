@@ -17,6 +17,7 @@
         android:src="@drawable/logo_app" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10sp"
         android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,12 +35,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10sp"
         android:id="@+id/txtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Entre com sua senha"
         app:endIconMode="password_toggle"
-        app:startIconDrawable="@drawable/baseline_email">
+        app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
