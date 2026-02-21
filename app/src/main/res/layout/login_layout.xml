@@ -20,7 +20,7 @@
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10sp"
+        android:layout_marginTop="50sp"
         android:hint="Entre com seu e-mail"
         app:endIconMode="clear_text"
         app:startIconDrawable="@drawable/baseline_email">
@@ -39,7 +39,7 @@
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10sp"
+        android:layout_marginTop="20sp"
         android:hint="Entre com sua senha"
         app:endIconMode="password_toggle"
         app:startIconDrawable="@drawable/baseline_lock">
@@ -65,7 +65,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
         android:text="Acessar"
         android:textSize="24dp"
         app:cornerRadius="5dp" />
@@ -87,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:text="_______________ ou _______________"
         android:textSize="24dp" />
 
