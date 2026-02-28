@@ -1,6 +1,8 @@
 package br.com.etecia.moveisapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +10,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.button.MaterialButton;
+
 public class LoginActivity extends AppCompatActivity {
+    MaterialButton btnCadastrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +25,16 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        btnCadastrar = findViewById(R.id.btnCadastrar);
+
+        btnCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), CadastrarActivity.class));
+                finish();
+            }
+        });
+
     }
 }
