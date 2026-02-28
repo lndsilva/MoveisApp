@@ -3,6 +3,7 @@ package br.com.etecia.moveisapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class LoginActivity extends AppCompatActivity {
     MaterialButton btnCadastrar;
+    TextView txtRecupera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +29,19 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         btnCadastrar = findViewById(R.id.btnCadastrar);
+        txtRecupera = findViewById(R.id.txtRecupera);
 
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), CadastrarActivity.class));
+                finish();
+            }
+        });
+        txtRecupera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RecuperarActivity.class));
                 finish();
             }
         });
