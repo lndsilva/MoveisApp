@@ -15,7 +15,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 
 public class LoginActivity extends AppCompatActivity {
-    MaterialButton btnCadastrar;
+    MaterialButton btnCadastrar, btnAcessar;
     TextView txtRecupera;
 
 
@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         btnCadastrar = findViewById(R.id.btnCadastrar);
+        btnAcessar = findViewById(R.id.btnAcessar);
         txtRecupera = findViewById(R.id.txtRecupera);
 
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +45,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), RecuperarActivity.class));
+                finish();
+            }
+        });
+        btnAcessar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
                 finish();
             }
         });
