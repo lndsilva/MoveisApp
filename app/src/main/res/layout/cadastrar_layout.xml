@@ -21,13 +21,13 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtEmail"
+        android:id="@+id/edtNOme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
-        android:hint="Entre com seu e-mail"
+        android:hint="Entre com seu nome"
         app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/baseline_email">
+        app:startIconDrawable="@drawable/baseline_person">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -76,11 +76,11 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtSenha"
+        android:id="@+id/edtRepeteSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
-        android:hint="Entre com sua senha"
+        android:hint="Repeta sua senha"
         app:endIconMode="password_toggle"
         app:startIconDrawable="@drawable/baseline_lock">
 
